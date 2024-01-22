@@ -2,3 +2,23 @@ body {
     background-color: black;
     color: aliceblue;
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+}
+
+.sidebar_navigation {
+    background-color: rgb(15, 15, 15);
+    border-radius: 10px;
+    padding: 16px 0px 0px 16px;
+}
+
+.logo img {
+    width: 90px;
+
+}
