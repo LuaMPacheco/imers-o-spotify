@@ -10,6 +10,7 @@ body {
     bottom: 0;
     padding: 12px;
     width: 300px;
+    display: block;
 }
 
 .sidebar_navigation {
@@ -26,7 +27,6 @@ body {
 
 .sidebar_navigation .logo img {
     width: 90px;
-
 }
 
 .sidebar nav ul {
@@ -44,4 +44,8 @@ body {
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
     font-size: 19px;
+}
+
+.sidebar nav ul li a:hover {
+    color: rgb(255, 255, 255);
 }
