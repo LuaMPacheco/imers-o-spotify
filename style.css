@@ -6,15 +6,11 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
-.sidebar, .library {
-    display: block;
-}
 
 .sidebar {
-    /*position: fixed;*/
+    position: static;
     top: 0;
     left: 0;
-    bottom: 0;
     padding: 12px;
     width: 300px;
 }
@@ -59,63 +55,118 @@ body {
 /*Minha biblioteca*/
 
 .library {
+    font-size: 14px;
+    font-weight: 600;
     color: #b3b3b3;
     border-radius: 10px;
-    background-color: #121212;
-    padding: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+
+    padding: 4px 8px;
     margin: 12px;
-    width: 276px;
+    width: 285px;
+    background-color: #121212;
 }
 
-.fa {
+.library .library_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library_button {
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.library .library_button .fa {
+    font-size: 18px;
+    margin-right: 12px;
     padding-right: 8px;
 }
 
-span.texto {
-    padding-right: 80px;
+.library .library_content .fa-add {
+    margin: 20px 15px;
+    font-size: 18px;
 }
 
-.library_content { /*É assim que deixa o conteúdo um do lado do outro*/
+.section-playlist {
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 10px 10px 25px 10px;
-}
-
-.library_content span {
-    color: #b3b3b3;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.playlist {
-    background-color: rgb(42, 42, 42);
+    column-gap: 20px;
+    background-color: #242424;
+    margin: 8px 0;
+    padding: 16px 20px;
     border-radius: 10px;
-    padding: 20px 15px;
 }
 
-.playlist h1 {
-    color: white;
-    padding-bottom: 20px;
-    font-weight: 600
+.section-playlist .section-playlist_content {
+    display: flex;
+    flex-direction: column;
 }
 
-.playlist h2 {
-    color: white;
-    padding-bottom: 15px;
+.section-playlist_content .text {
+    padding-bottom: 14px;
 }
 
-.playlist button{
-    border-radius: 40px;
-    border: none;
-    padding: 10px 15px;
-    font-size: 15px;
+.section-playlist_content .title {
+    font-weight: 700;
+}
+
+.section-playlist_content .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.section-playlist_content .section-playlist_button {
+    display: flex;
+    justify-content: center;
     background-color: white;
-    font-weight: 600;
-    font-family: "DM Sans", sans-serif;
-    margin: 10px 0 5px 0;
+    border: none;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 12px;
+    width: 113px;
 }
 
-.library p {
-    padding: 90px 0;
+.library .cookies {
+    margin: 25px 20px; 
+}
+
+.library .cookies a {
+    text-decoration: none;
+    color:#b3b3b3;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.library .cookies a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.languages .languages_button {
+    background-color: transparent;
+    border: 1px solid #878787;
+    border-radius: 20px;
+    color:white;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 500;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
 }
