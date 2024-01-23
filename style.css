@@ -170,3 +170,53 @@ body {
     margin: 8px;
     padding: 8px;
 }
+
+/*FOOTER*/
+.footer {
+    background: rgb(233,15,137);
+    background: linear-gradient(90deg, rgba(233,15,137,1) 0%, rgba(144,24,214,1) 48%, rgba(0,181,255,1) 100%);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 28px 20px 28px;
+}
+
+.footer_content .text {
+    flex-shrink: 0; /*Faz com que o texto diminua junto com a tela*/
+    color: white;
+    row-gap: 20px;
+
+}
+
+.footer_content .title {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase; /*Deixa o texto em capslock*/
+}
+
+.footer_content .subtitle {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.footer .footer_button {
+    margin: 20px 25px 20px 30px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.footer .footer_button:hover {
+    background-color: black;
+    color: white;
+}
