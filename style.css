@@ -1,25 +1,32 @@
+@charset "UTF-8";
+
 body {
     background-color: black;
     color: aliceblue;
+    font-family: "DM Sans", sans-serif;
+}
+
+.sidebar, .library {
+    display: block;
 }
 
 .sidebar {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
     bottom: 0;
     padding: 12px;
     width: 300px;
-    display: block;
 }
 
 .sidebar_navigation {
-    background-color: rgb(15, 15, 15);
+    background-color: #121212;
     border-radius: 10px;
     padding: 16px 0px 0px 16px;
 }
 
 .sidebar_navigation .logo {
+    background-color: #121212;
     display: flex;
     border-radius: 10px;
     padding: 16px 0 0 16px;
@@ -41,11 +48,74 @@ body {
 .sidebar nav ul li a {
     color: #b3b3b3;
     text-decoration: none;
-    font-family: "DM Sans", sans-serif;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 14px;
 }
 
 .sidebar nav ul li a:hover {
     color: rgb(255, 255, 255);
+}
+
+/*Minha biblioteca*/
+
+.library {
+    color: #b3b3b3;
+    border-radius: 10px;
+    background-color: #121212;
+    padding: 12px;
+    margin: 12px;
+    width: 276px;
+}
+
+.fa {
+    padding-right: 8px;
+}
+
+span.texto {
+    padding-right: 80px;
+}
+
+.library_content { /*É assim que deixa o conteúdo um do lado do outro*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px 25px 10px;
+}
+
+.library_content span {
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.playlist {
+    background-color: rgb(42, 42, 42);
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+
+.playlist h1 {
+    color: white;
+    padding-bottom: 20px;
+    font-weight: 600
+}
+
+.playlist h2 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.playlist button{
+    border-radius: 40px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: white;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    margin: 10px 0 5px 0;
+}
+
+.library p {
+    padding: 90px 0;
 }
