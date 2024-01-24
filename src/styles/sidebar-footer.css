@@ -2,13 +2,12 @@
 
 body {
     background-color: black;
-    color: aliceblue;
     font-family: var(--font-dm-sans);
 }
 
 
 .sidebar {
-    position: static;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 12px;
@@ -65,7 +64,7 @@ body {
     flex-direction:column;
 
     padding: 4px 8px;
-    margin: 12px;
+    margin-top: 12px;
     width: 285px;
     background-color: #121212;
 }
