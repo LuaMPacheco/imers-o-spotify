@@ -185,7 +185,7 @@ body {
 }
 
 .text {
-    flex-shrink: 0; /*Faz com que o texto diminua junto com a tela*/
+    flex-shrink: 20px; /*Faz com que o texto diminua junto com a tela*/
     color: white;
     row-gap: 20px;
 
