@@ -106,7 +106,7 @@
     background-color: #121212;
     border-radius: 10px;
     max-width: 80vw;
-    height: 67vh;
+    height: 69vh;
     margin: 10px;
 }
 
@@ -132,6 +132,7 @@
     max-height: 43vh;
     margin: 24px;
     overflow-y: auto;
+
 }
 
 .offer__scroll-contanier::-webkit-scrollbar {
